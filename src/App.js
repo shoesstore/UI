@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
-import Buttons              from "./components/Buttons/Buttons";
+import React,           { Component }               from 'react';
+import                  { BrowserRouter as Router } from "react-router-dom";
+import RouterProtect                                from './routes';
+
 
 export default class App extends Component {
 
    render() {
      return (
-         <Buttons/>
+        <Router>
+            <RouterProtect/>
+        </Router>
      );
    }
 }
