@@ -1,0 +1,20 @@
+.footer {
+    background-color: black;
+    height: 350px;
+}
+
+.footer-v2 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.middle-footer {
+    background-color: grey;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
