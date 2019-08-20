@@ -1,4 +1,5 @@
 import React, { Component }                                                                                from 'react';
+import { Link }                                                                                            from "react-router-dom";
 import { Col, Collapse, Input, InputGroup, InputGroupAddon, Nav, Navbar, NavbarToggler, NavItem, NavLink } from "reactstrap";
 import                                                                                                          '../css/header/header.css';
 
@@ -25,7 +26,9 @@ export default class Header extends Component {
             <div>
                 <Navbar color="light" light expand="md">
                     <Col xs="6" sm="4">
-                        <img className="brand-shoes" src={require("../image/header/brand.png")} />
+                        <Link to="/">
+                            <img className="brand-shoes" src={require("../image/header/brand.png")} alt="logo" />
+                        </Link>
                     </Col>
                     <Col xs="6" sm="4">
                         <NavbarToggler onClick={ () => this.toggle() } />
