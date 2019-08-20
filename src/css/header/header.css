@@ -2,3 +2,9 @@
     height: 80px;
     width: 90px;
 }
+
+.search-icon {
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 10px
+}

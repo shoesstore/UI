@@ -25,7 +25,7 @@ export default class Header extends Component {
             <div>
                 <Navbar color="light" light expand="md">
                     <Col xs="6" sm="4">
-                        <img className="brand-shoes" src={require("../image/header/brand.jpg")} />
+                        <img className="brand-shoes" src={require("../image/header/brand.png")} />
                     </Col>
                     <Col xs="6" sm="4">
                         <NavbarToggler onClick={ () => this.toggle() } />
@@ -47,6 +47,7 @@ export default class Header extends Component {
                         <center>
                             <InputGroup style={{ width: 300 }}>
                                 <InputGroupAddon addonType="prepend">
+                                    <img className="search-icon" src={require("../image/header/search.png")} />
                                 </InputGroupAddon>
                                 <Input placeholder="Search" />
                             </InputGroup>
