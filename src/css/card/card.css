@@ -1,6 +1,11 @@
 .row {
     display: flex;
     padding-bottom: 100px;
-    padding-left: 150px;
+    padding-left: 15px;
     justify-content: flex-start;
+}
+
+.product {
+    padding-left: 30px;
+    padding-bottom: 30px;
 }
