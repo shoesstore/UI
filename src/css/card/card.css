@@ -1,0 +1,6 @@
+.row {
+    display: flex;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    justify-content: flex-start;
+}

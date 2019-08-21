@@ -1,27 +1,37 @@
 import React, { Component } from 'react';
-import CardShoesStore       from "../../ui/card-shoestore";
+import { CardShoesStore }   from '../../ui';
+import                           '../../css/card/card.css';
 
 export default class ProductList extends Component {
 
     render() {
 
         const products = [
-            { img: require('../../image/carousel/carousel1.jpg'), name:"giay nike", price: 1000, description: "New Product!" },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"giay bitis", price: 2000, description: "New Product!" },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"giay bitis", price: 3000, description: "New Product!" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 1000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 2000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 3000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
         ];
 
         return (
-            <div>
+            <div className="row">
                 {
                     products.map((product, index) => {
                         return(
-                            <div key={index}>
+                            <div>
                                 <CardShoesStore
+                                    key={index}
                                     product={product}
-                                    className="flex"
+                                    height={400}
+                                    width={300}
+                                    className="product"
                                 />
                             </div>
+
                         )
                     })
                 }
