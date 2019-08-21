@@ -1,6 +1,7 @@
 import React, { Component }                                                    from 'react';
-import { Button, Modal, ModalBody, ModalFooter, ModalHeader, Navbar, NavLink } from "reactstrap";
+import { Button, Modal, ModalBody, ModalFooter, ModalHeader, NavLink } from "reactstrap";
 import                                                                              '../css/topbar/topbar.css';
+import FormRegister                                                            from "./FormRegister";
 
 export default class Topbar extends Component {
 
@@ -47,7 +48,7 @@ export default class Topbar extends Component {
                         <Modal isOpen={modal} toggle={ () => this.toggle() } className={className}>
                             <ModalHeader toggle={ () => this.toggle() }>Register</ModalHeader>
                             <ModalBody>
-                                Hello
+                                <FormRegister/>
                             </ModalBody>
                             <ModalFooter>
                                 <Button color="primary" onClick={ () => this.toggle() }>Do Something</Button>{' '}
