@@ -1,14 +1,15 @@
-import React from 'react';
+import React                                                          from 'react';
 import { Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap';
+
 
 const CardShoesStore = (props) => {
 
-    const { width, product } = props;
+    const { className, product } = props;
 
     return(
-        <div>
-            <Card>
-                <CardImg top width={width} src={product.img} alt="Card image cap" />
+        <div className={ className }>
+            <Card style={{ height: 300, width: 300 }}>
+                <CardImg src={product.img} alt="Card image cap" />
                 <CardBody>
                     <CardTitle>{product.name}</CardTitle>
                     <CardSubtitle>{product.price}</CardSubtitle>

@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import                            '../css/carousel/carousel.css';
-import {CardShoesStore,
-        CarouselShoesStore} from '../ui';
+import React, { Component }     from 'react';
+import { CarouselShoesStore }   from '../ui';
+import ProductList              from "../components/Product/ProductList";
+import                               '../css/carousel/carousel.css';
+
 
 export default class HomePage extends Component {
 
@@ -13,52 +14,15 @@ export default class HomePage extends Component {
             { src: require('../image/carousel/carousel3.jpg'), altText: 'Slide 3', caption: 'Slide 3', header: 'Slide 3 Header' }
         ];
 
-        const style = {
-            "padding-bottom" : 100,
-        };
-
-        const products = [
-            {
-                img: require('../image/carousel/carousel1.jpg'),
-                name:"giay nike",
-                price: 1000,
-                description: "New Product!"
-            },
-            {
-                img: require('../image/carousel/carousel1.jpg'),
-                name:"giay bitis",
-                price: 2000,
-                description: "New Product!"
-            },
-            {
-                img: require('../image/carousel/carousel1.jpg'),
-                name:"giay bitis",
-                price: 3000,
-                description: "New Product!"
-            },
-        ];
 
         return(
             <div>
-                <div style={style}>
+                <div style={{ "padding-bottom": 100 }} >
                     <CarouselShoesStore
                         items={items}
                     />
                 </div>
-                <div>
-                    {
-                        products.map((product, index) => {
-                            return(
-                                <div key={index}>
-                                    <CardShoesStore
-                                        width="10"
-                                        product={product}
-                                    />
-                                </div>
-                            )
-                        })
-                    }
-                </div>
+                <ProductList/>
             </div>
         );
     }
