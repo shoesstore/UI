@@ -18,7 +18,7 @@ export default class ProductList extends Component {
         ];
 
         return (
-            <div className="row">
+            <div className="row container-fluid">
                 {
                     products.map((product, index) => {
                         return(

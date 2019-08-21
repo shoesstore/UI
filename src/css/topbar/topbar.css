@@ -1,5 +1,7 @@
 .topbar {
     display: flex;
-    padding-left: 1100px;
+    justify-content: flex-end;
+    padding-right: 30px;
     width: 100%;
+    background-color: #FFFFFF;
 }
