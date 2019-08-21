@@ -32,29 +32,23 @@ export default class Header extends Component {
                     </Col>
                     <Col xs="6" sm="4">
                         <NavbarToggler onClick={ () => this.toggle() } />
-                        <Collapse isOpen={isOpen} navbar>
+                        <Collapse className="menu" isOpen={isOpen} navbar>
                             <Nav navbar>
-                                <NavItem>
-                                    <NavLink href="#">MEN</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="#">WOMEN</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="#">COLLECTIONS</NavLink>
-                                </NavItem>
+                                <NavItem><NavLink href="#">MEN</NavLink></NavItem>
+                                <NavItem><NavLink href="#">WOMEN</NavLink></NavItem>
+                                <NavItem><NavLink href="#">COLLECTIONS</NavLink></NavItem>
                             </Nav>
                         </Collapse>
                     </Col>
                     <Col sm="4">
-                        <center>
+                        <div className="search-input">
                             <InputGroup style={{ width: 300 }}>
                                 <InputGroupAddon addonType="prepend">
                                     <img className="search-icon" src={require("../image/header/search.png")} alt="search"/>
                                 </InputGroupAddon>
                                 <Input placeholder="Search" />
                             </InputGroup>
-                        </center>
+                        </div>
                     </Col>
                 </Navbar>
             </div>

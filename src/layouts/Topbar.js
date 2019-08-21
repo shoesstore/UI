@@ -1,59 +1,85 @@
 import React, { Component }                                             from 'react';
-import { Button, Modal, ModalBody, ModalFooter, ModalHeader, NavLink }  from "reactstrap";
-import FormRegister                                                     from "./FormRegister";
+import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink }  from "reactstrap";
+import FormRegister                                                     from "../components/Form/FormRegister";
+import FormLogin                                                        from "../components/Form/FormLogin";
 import                                                                       '../css/topbar/topbar.css';
-
+import { ButtonShoesStore }                                             from '../ui';
 
 export default class Topbar extends Component {
 
     state = {
-        modal: false
+        modalOne: false,
+        modalTwo: false
     };
 
-    toggle() {
-        this.setState(prevState => ({
-            modal: !prevState.modal
-        }));
+
+    toggleOne() {
+        this.setState({
+            modalOne: !this.state.modalOne
+        })
     }
 
+    toggleTwo() {
+        this.setState({
+            modalTwo: !this.state.modalTwo
+        })
+    }
 
     render() {
 
-        const { className } = this.props;
-        const { modal } = this.state;
-
+        const { modalOne, modalTwo } = this.state;
 
         return (
             <div>
                 <div className="topbar">
                     <div>
                         <div>
-                            <NavLink onClick={() => this.toggle()}>Login</NavLink>
+                            <NavLink onClick={ () => this.toggleOne() }>Login</NavLink>
                         </div>
-                        <Modal isOpen={modal} toggle={ () => this.toggle() } className={className}>
-                            <ModalHeader toggle={ () => this.toggle() }>Login</ModalHeader>
+                        <Modal isOpen={modalOne} toggle={ () => this.toggleOne() }>
+                            <ModalHeader toggle={ () => this.toggleOne() }>Login</ModalHeader>
                             <ModalBody>
-                                Hello
+                                <FormLogin/>
                             </ModalBody>
                             <ModalFooter>
-                                <Button color="primary" onClick={ () => this.toggle() }>Do Something</Button>{' '}
-                                <Button color="secondary" onClick={ () => this.toggle() }>Cancel</Button>
+                                <ButtonShoesStore
+                                    color="primary"
+                                    onClick={ () => this.toggleOne() }
+                                >
+                                    Login
+                                </ButtonShoesStore>
+                                <ButtonShoesStore
+                                    color="secondary"
+                                    onClick={ () => this.toggleOne() }
+                                >
+                                    Cancel
+                                </ButtonShoesStore>
                             </ModalFooter>
                         </Modal>
                     </div>
 
                     <div>
                         <div>
-                            <NavLink onClick={() => this.toggle()}>Register</NavLink>
+                            <NavLink onClick={() => this.toggleTwo()}>Register</NavLink>
                         </div>
-                        <Modal isOpen={modal} toggle={ () => this.toggle() } className={className}>
-                            <ModalHeader toggle={ () => this.toggle() }>Register</ModalHeader>
+                        <Modal isOpen={modalTwo} toggle={ () => this.toggleTwo() }>
+                            <ModalHeader toggle={ () => this.toggleTwo() }>Register</ModalHeader>
                             <ModalBody>
                                 <FormRegister/>
                             </ModalBody>
                             <ModalFooter>
-                                <Button color="primary" onClick={ () => this.toggle() }>Do Something</Button>{' '}
-                                <Button color="secondary" onClick={ () => this.toggle() }>Cancel</Button>
+                                <ButtonShoesStore
+                                    color="primary"
+                                    onClick={ () => this.toggleOne() }
+                                >
+                                    Register
+                                </ButtonShoesStore>
+                                <ButtonShoesStore
+                                    color="secondary"
+                                    onClick={ () => this.toggleOne() }
+                                >
+                                    Cancel
+                                </ButtonShoesStore>
                             </ModalFooter>
                         </Modal>
                     </div>

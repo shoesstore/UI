@@ -9,6 +9,7 @@
     padding-bottom: 100px;
     padding-left: 15px;
     justify-content: flex-start;
+    user-select: none;
 }
 
 .product {
@@ -19,4 +20,10 @@
 .name-price {
     display: flex;
     justify-content: space-between;
+}
+
+.image-new-product {
+    height: 50px;
+    width: 50px;
+    margin-left: 100px;
 }

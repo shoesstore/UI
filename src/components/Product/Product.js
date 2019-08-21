@@ -16,9 +16,9 @@ const Product = (props) => {
                         <CardTitle><strong>{product.name}</strong></CardTitle>
                         <CardTitle>{product.price} $</CardTitle>
                     </div>
-                    <center>
-                        <CardTitle>{product.description}</CardTitle>
-                    </center>
+                    <div>
+                        <img className="image-new-product" src={require('../../image/product/new-product2.png')} alt="image-new-product"/>
+                    </div>
                 </CardBody>
                 <div className="button-product">
                     <div>
