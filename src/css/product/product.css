@@ -1,3 +1,9 @@
+.button-product {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
 .row {
     display: flex;
     padding-bottom: 100px;
@@ -8,4 +14,9 @@
 .product {
     padding-left: 30px;
     padding-bottom: 30px;
+}
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
 }

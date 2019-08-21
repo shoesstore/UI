@@ -1,7 +1,8 @@
-import React, { Component }                                                    from 'react';
-import { Button, Modal, ModalBody, ModalFooter, ModalHeader, NavLink } from "reactstrap";
-import                                                                              '../css/topbar/topbar.css';
-import FormRegister                                                            from "./FormRegister";
+import React, { Component }                                             from 'react';
+import { Button, Modal, ModalBody, ModalFooter, ModalHeader, NavLink }  from "reactstrap";
+import FormRegister                                                     from "./FormRegister";
+import                                                                       '../css/topbar/topbar.css';
+
 
 export default class Topbar extends Component {
 

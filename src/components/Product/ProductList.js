@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import { CardShoesStore }   from '../../ui';
-import                           '../../css/card/card.css';
+import Product              from './Product';
+import                           '../../css/product/product.css';
+
 
 export default class ProductList extends Component {
 
     render() {
 
         const products = [
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 1000, description: "New Product" },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 2000, description: "New Product" },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 3000, description: "New Product" },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Shoes", price: 4000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 2000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 3000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 4000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 4000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 4000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 4000, description: "New Product" },
+            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 4000, description: "New Product" },
         ];
 
         return (
@@ -23,7 +24,7 @@ export default class ProductList extends Component {
                     products.map((product, index) => {
                         return(
                             <div>
-                                <CardShoesStore
+                                <Product
                                     key={index}
                                     product={product}
                                     height={400}
