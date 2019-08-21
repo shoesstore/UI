@@ -50,7 +50,7 @@ export default class Header extends Component {
                         <center>
                             <InputGroup style={{ width: 300 }}>
                                 <InputGroupAddon addonType="prepend">
-                                    <img className="search-icon" src={require("../image/header/search.png")}/>
+                                    <img className="search-icon" src={require("../image/header/search.png")} alt="search"/>
                                 </InputGroupAddon>
                                 <Input placeholder="Search" />
                             </InputGroup>
