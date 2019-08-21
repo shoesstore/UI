@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ButtonShoeStore      from "../../ui/button-shoestore/button-shoestore";
+import Index      from "../../ui/button-shoestore";
 
 
 export default class FirstButton extends Component {
@@ -15,13 +15,13 @@ export default class FirstButton extends Component {
 
         return(
             <div style={style}>
-                <ButtonShoeStore
+                <Index
                     color="danger"
                     width={300}
                     height={100}
                 >
                     BUTTON
-                </ButtonShoeStore>
+                </Index>
             </div>
         );
     }

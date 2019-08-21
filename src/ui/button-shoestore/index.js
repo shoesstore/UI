@@ -2,7 +2,7 @@ import React      from 'react';
 import { Button } from 'reactstrap';
 
 
-const ButtonShoeStore = (props) => {
+const ButtonShoesStore = (props) => {
 
     const { color, width, height } = props;
 
@@ -17,4 +17,4 @@ const ButtonShoeStore = (props) => {
     )
 }
 
-export default ButtonShoeStore;
+export default ButtonShoesStore;

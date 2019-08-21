@@ -1,7 +1,7 @@
-import React, { Component }  from 'react';
-import { BrowserRouter }     from "react-router-dom";
-import CarouselShoesStore    from "../ui/carousel-shoestore/carousel-shoestore";
+import React, { Component } from 'react';
 import                            '../css/carousel/carousel.css';
+import {CardShoesStore,
+        CarouselShoesStore} from '../ui';
 
 export default class HomePage extends Component {
 
@@ -15,17 +15,51 @@ export default class HomePage extends Component {
 
         const style = {
             "padding-bottom" : 100,
-        }
+        };
+
+        const products = [
+            {
+                img: require('../image/carousel/carousel1.jpg'),
+                name:"giay nike",
+                price: 1000,
+                description: "New Product!"
+            },
+            {
+                img: require('../image/carousel/carousel1.jpg'),
+                name:"giay bitis",
+                price: 2000,
+                description: "New Product!"
+            },
+            {
+                img: require('../image/carousel/carousel1.jpg'),
+                name:"giay bitis",
+                price: 3000,
+                description: "New Product!"
+            },
+        ];
 
         return(
-            <BrowserRouter>
+            <div>
                 <div style={style}>
                     <CarouselShoesStore
                         items={items}
                     />
                 </div>
-            </BrowserRouter>
-
+                <div>
+                    {
+                        products.map((product, index) => {
+                            return(
+                                <div key={index}>
+                                    <CardShoesStore
+                                        width="10"
+                                        product={product}
+                                    />
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
         );
     }
 }
