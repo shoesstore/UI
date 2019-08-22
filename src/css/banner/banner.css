@@ -1,0 +1,23 @@
+.shoes-for-women {
+    background-image: url('../../image/banner/ShoesForMen.jpg');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 600px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shoes-for-men {
+    background-image: url('../../image/banner/ShoesForWomen.jpg');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 600px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shoes-for-women-and-men {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}

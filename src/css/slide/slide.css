@@ -1,0 +1,9 @@
+.swiper-slide-home {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1200px;
+    width: 1000px;
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 275px;
+}
