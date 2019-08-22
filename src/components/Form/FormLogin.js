@@ -8,6 +8,7 @@ export default class FormLogin extends Component {
                 <FormGroup>
                     <center>
                         <img className="brand-shoes-logo" src={require("../../image/header/brand.png")} alt="logo"/>
+                        <p className="citation-login">YOUR ACCOUNT FOR EVERYTHING NIKE</p>
                     </center>
                 </FormGroup>
                 <FormGroup>

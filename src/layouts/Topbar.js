@@ -1,5 +1,5 @@
 import React, { Component }                                             from 'react';
-import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink }  from "reactstrap";
+import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink }          from "reactstrap";
 import FormRegister                                                     from "../components/Form/FormRegister";
 import FormLogin                                                        from "../components/Form/FormLogin";
 import                                                                       '../css/topbar/topbar.css';
@@ -54,7 +54,6 @@ export default class Topbar extends Component {
                                 >
                                     Cancel
                                 </ButtonShoesStore>
-                                <img src="./assets/img/tenor.gif" alt="Girl in a jacket"/>
                             </ModalFooter>
                         </Modal>
                     </div>
