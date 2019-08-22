@@ -57,7 +57,7 @@ export default class FormResetPassword extends Component {
                         </Modal>
                     </ModalBody>
                     <ModalFooter>
-                        <Button color="success" onClick={ () => this.toggleNested() }>RESET</Button>
+                        <Button color="primary" onClick={ () => this.toggleNested() }>RESET</Button>
                     </ModalFooter>
                 </Modal>
             </Form>

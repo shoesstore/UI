@@ -43,7 +43,7 @@ export default class Topbar extends Component {
                             </ModalBody>
                             <ModalFooter>
                                 <ButtonShoesStore
-                                    color="secondary"
+                                    color="primary"
                                     onClick={ () => this.toggleOne() }
                                 >
                                     Login

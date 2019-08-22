@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch }    from 'react-router-dom';
 import HomePage             from './containers/HomePage';
 import ProductListPage      from "./containers/ProductListPage";
+import ProductDetailPage from "./containers/ProductDetailPage";
 
 export default class RouterProtect extends Component {
     render() {
@@ -9,6 +10,7 @@ export default class RouterProtect extends Component {
             <Switch>
                 <Route exact path="/" component={HomePage}/>
                 <Route exact path="/collections" component={ProductListPage}/>
+                <Route exact path="/product" component={ProductDetailPage}/>
             </Switch>
         )
     }
