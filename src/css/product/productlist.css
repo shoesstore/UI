@@ -1,0 +1,11 @@
+.left-nav-wrapper {
+    vertical-align: top;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 20px 20px 20px;
+}
+
+.product-grid {
+    padding: 20px 20px 0px 20px;
+}
