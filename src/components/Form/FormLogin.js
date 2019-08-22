@@ -1,5 +1,8 @@
-import React, { Component }              from 'react';
-import { Form, FormGroup, Input, Label } from "reactstrap";
+import React, { Component }                from 'react';
+import { Form, FormGroup, Input, Label }   from "reactstrap";
+import { NavLink }                         from 'react-router-dom'
+import FormResetPassword                   from "./FormResetPassword";
+
 
 export default class FormLogin extends Component {
     render() {
@@ -8,7 +11,10 @@ export default class FormLogin extends Component {
                 <FormGroup>
                     <center>
                         <img className="brand-shoes-logo" src={require("../../image/header/brand.png")} alt="logo"/>
-                        <p className="citation-login">YOUR ACCOUNT FOR EVERYTHING NIKE</p>
+                        <div>
+                            <p className="view-topbar">YOUR ACCOUNT FOR EVERYTHING NIKE</p>
+
+                        </div>
                     </center>
                 </FormGroup>
                 <FormGroup>
@@ -26,8 +32,11 @@ export default class FormLogin extends Component {
                         <FormGroup check>
                             <Label check>
                                 <Input type="checkbox"/>{' '}
-                                Forget Password
+                                Keep me logged in
                             </Label>
+                            <NavLink className="login-option" >
+                                <FormResetPassword/>
+                            </NavLink>
                         </FormGroup>
                     </FormGroup>
                 </FormGroup>

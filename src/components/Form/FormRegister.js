@@ -3,6 +3,7 @@ import { Form, FormGroup, Label, Input } from 'reactstrap';
 
 
 export default class FormRegister extends Component {
+
     render() {
         return (
             <Form row>

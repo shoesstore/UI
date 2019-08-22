@@ -23,9 +23,32 @@
     user-select: none;
 }
 
-
 .brand-shoes-logo {
-    height: 80px;
-    width: 90px;
-    user-select: none;
+    background-position-x: center;
+    background-size: 43px;
+    height: 60px;
+    margin: 0 auto;
+    max-width: 573px;
+}
+
+.view-topbar {
+    color: #111;
+    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    margin: auto;
+    max-width: 25ch;
+    text-align: center;
+}
+
+.login-option {
+    float: right;
+    line-height: 20px;
+    margin: 0px 0 20px;
+    color: #8d8d8d;
+}
+
+.login-option:hover {
+    text-decoration: none;
 }
