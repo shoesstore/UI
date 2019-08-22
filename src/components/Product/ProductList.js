@@ -20,8 +20,8 @@ export default class ProductList extends Component {
         ];
 
         return (
-            <div className="container-fluid">
-                <div className="row">
+
+                <div className="row container-fluid">
                     {
                         products.map((product, index) => {
                             return(
@@ -38,7 +38,7 @@ export default class ProductList extends Component {
                         })
                     }
                 </div>
-            </div>
+            
         );
     }
 }
