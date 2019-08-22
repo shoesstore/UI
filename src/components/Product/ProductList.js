@@ -20,22 +20,24 @@ export default class ProductList extends Component {
         ];
 
         return (
-            <div className="row container-fluid">
-                {
-                    products.map((product, index) => {
-                        return(
-                            <div>
-                                <Product
-                                    key={index}
-                                    product={product}
-                                    height={400}
-                                    width={300}
-                                    className="product"
-                                />
-                            </div>
-                        )
-                    })
-                }
+            <div className="container-fluid">
+                <div className="row">
+                    {
+                        products.map((product, index) => {
+                            return(
+                                <div>
+                                    <Product
+                                        key={index}
+                                        product={product}
+                                        height={400}
+                                        width={300}
+                                        className="product"
+                                    />
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
         );
     }

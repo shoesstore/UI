@@ -1,0 +1,10 @@
+.left-nav-collapse {
+    border-bottom: solid thin #DFDFDF;
+    width: 180px;
+    padding: 20px 20px;
+    text-align: left;
+}
+
+.left-nav-collapse-result {
+    padding: 20px 20px;
+}
