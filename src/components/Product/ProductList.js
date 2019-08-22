@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Product              from './Product';
-import                           '../../css/product/product.css';
+
+import '../../css/product/product.css';
 
 
 export default class ProductList extends Component {

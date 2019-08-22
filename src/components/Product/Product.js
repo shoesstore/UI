@@ -1,7 +1,7 @@
 import React                                   from 'react';
 import { Card, CardBody, CardImg, CardTitle }  from "reactstrap";
 import { ButtonShoesStore }                    from "../../ui";
-import                                              '../../css/product/product.css';
+import '../../css/product/product.css';
 
 const Product = (props) => {
 
@@ -17,7 +17,7 @@ const Product = (props) => {
                         <CardTitle>{product.price} $</CardTitle>
                     </div>
                     <div>
-                        <img className="image-new-product" src={require('../../image/product/new-product2.png')} alt="image-new-product"/>
+                        <img className="image-new-product" src={require('../../image/product/new-product2.png')} alt="img-new-product"/>
                     </div>
                 </CardBody>
                 <div className="button-product">
