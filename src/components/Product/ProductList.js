@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Product              from './Product';
-
-import '../../css/product/product.css';
+import                           '../../css/product/product.css';
 
 
 export default class ProductList extends Component {
@@ -19,8 +18,12 @@ export default class ProductList extends Component {
             { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000 },
         ];
 
-        return (
 
+        return (
+            <div>
+                <div className="name-list-product">
+                    LIST PRODUCT
+                </div>
                 <div className="row container-fluid">
                     {
                         products.map((product, index) => {
@@ -38,7 +41,7 @@ export default class ProductList extends Component {
                         })
                     }
                 </div>
-            
+            </div>
         );
     }
 }

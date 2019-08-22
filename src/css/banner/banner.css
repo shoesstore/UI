@@ -5,12 +5,14 @@
     width: 600px;
     font-weight: bold;
     font-size: 20px;
+    user-select: none;
 }
 
 .shoes-for-women p {
     text-align: center;
     padding-top: 200px;
     color: white;
+    user-select: none;
 }
 
 .shoes-for-men {
@@ -20,38 +22,45 @@
     width: 600px;
     font-weight: bold;
     font-size: 20px;
+    user-select: none;
 }
 
 .shoes-for-men p {
     text-align: center;
     padding-top: 200px;
     color: white;
+    user-select: none;
 }
 
 .shoes-for-women-and-men {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 100px;
+    padding-bottom: 35px;
+    user-select: none;
 }
 
 .button-banner-women {
     display: flex;
     justify-content: center;
     opacity: 0.8;
+    user-select: none;
 }
 
 .button-banner-women:hover {
     opacity: 1;
+    user-select: none;
 }
 
 .button-banner-men {
     display: flex;
     justify-content: center;
     opacity: 0.8;
+    user-select: none;
 }
 
 .button-banner-men:hover {
     opacity: 1;
+    user-select: none;
 }
 
 .banner-advertisement {
@@ -59,9 +68,14 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 1000px;
+    margin-bottom: -60px;
+    user-select: none;
+
+
 }
 
 .banner-advertisement p {
     font-size: 50px;
     text-align: center;
+    user-select: none;
 }

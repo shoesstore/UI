@@ -8,7 +8,7 @@ export default class BannerShoes extends Component {
         return (
             <div className="shoes-for-women-and-men">
                 <div className="shoes-for-women">
-                    <p>Shoes for women</p>
+                    <p>Shoes for Women</p>
                     <div className="button-banner-women">
                         <ButtonShoesStore
                             color="secondary"
@@ -21,7 +21,7 @@ export default class BannerShoes extends Component {
                     </div>
                 </div>
                 <div className="shoes-for-men">
-                    <p>Shoes for men</p>
+                    <p>Shoes for Men</p>
                     <div className="button-banner-men">
                         <ButtonShoesStore
                             color="secondary"

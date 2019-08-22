@@ -1,3 +1,11 @@
+.name-list-product {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+
 .button-product {
     display: flex;
     justify-content: space-around;
@@ -6,7 +14,7 @@
 
 .row {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-left: 15px;
     justify-content: center;
     user-select: none;
