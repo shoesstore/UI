@@ -2,8 +2,9 @@ import React, { Component }                                             from 're
 import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink }          from "reactstrap";
 import FormRegister                                                     from "../components/Form/FormRegister";
 import FormLogin                                                        from "../components/Form/FormLogin";
-import '../css/topbar/topbar.css';
 import { ButtonShoesStore }                                             from '../ui';
+import                                                                       '../css/topbar/topbar.css';
+
 
 export default class Topbar extends Component {
 
