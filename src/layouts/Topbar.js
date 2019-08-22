@@ -54,6 +54,7 @@ export default class Topbar extends Component {
                                 >
                                     Cancel
                                 </ButtonShoesStore>
+                                <img src="./assets/img/tenor.gif" alt="Girl in a jacket"/>
                             </ModalFooter>
                         </Modal>
                     </div>
