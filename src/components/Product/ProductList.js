@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Product              from './Product';
-import                           '../../css/product/product.css';
 
 
 export default class ProductList extends Component {
@@ -21,9 +20,6 @@ export default class ProductList extends Component {
 
         return (
             <div>
-                <div className="name-list-product">
-                    LIST PRODUCT
-                </div>
                 <div className="row container-fluid">
                     {
                         products.map((product, index) => {

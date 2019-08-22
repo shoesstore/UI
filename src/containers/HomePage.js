@@ -1,9 +1,11 @@
 import React, { Component }     from 'react';
 import Carousel                 from "../components/Carousel/Carousel";
 import ProductList              from "../components/Product/ProductList";
-import BannerShoes                   from "../components/Banner/BannerShoes";
+import BannerShoes              from "../components/Banner/BannerShoes";
+import BannerAdvertisement      from "../components/Banner/BannerAdvertisement";
 import                               '../css/carousel/carousel.css';
-import BannerAdvertisement from "../components/Banner/BannerAdvertisement";
+import                               '../css/product/product.css';
+
 
 
 export default class HomePage extends Component {
@@ -14,6 +16,7 @@ export default class HomePage extends Component {
                 <Carousel/>
                 <BannerShoes/>
                 <BannerAdvertisement/>
+                <div className="name-list-product">LIST PRODUCT</div>
                 <ProductList/>
             </div>
         );
