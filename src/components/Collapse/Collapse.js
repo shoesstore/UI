@@ -32,22 +32,22 @@ class Collapses extends Component {
             <div>
                 <div className="left-nav-collapse" onClick={ () => this.toggleOne() }>Colour</div>
                 <Collapse isOpen={this.state.collapseOne}>
-                    <div className="left-nav-collapse-result"><strong>Itami:R-S</strong></div>
+                    <div className="left-nav-collapse-result">Itami:R-S</div>
                 </Collapse>
 
                 <div className="left-nav-collapse" onClick={ () => this.toggleTwo() }>Brand</div>
                 <Collapse isOpen={this.state.collapseTwo}>
-                    <div className="left-nav-collapse-result"><strong>Itami:R-S</strong></div>
+                    <div className="left-nav-collapse-result">Itami:R-S</div>
                 </Collapse>
 
                 <div className="left-nav-collapse" onClick={ () => this.toggleThree() }>Size</div>
                 <Collapse isOpen={this.state.collapseThree}>
-                    <div className="left-nav-collapse-result"><strong>Itami:R-S</strong></div>
+                    <div className="left-nav-collapse-result">Itami:R-S</div>
                 </Collapse>
 
                 <div className="left-nav-collapse" onClick={ () => this.toggleFour() }>Price</div>
                 <Collapse isOpen={this.state.collapseFour}>
-                    <div className="left-nav-collapse-result"><strong>Itami:R-S</strong></div>
+                    <div className="left-nav-collapse-result">Itami:R-S</div>
                 </Collapse>
             </div>
         );
