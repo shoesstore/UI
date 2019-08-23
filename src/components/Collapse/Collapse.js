@@ -37,8 +37,8 @@ class Collapses extends Component {
                     <div>
                         {
                             this.state.collapseOne
-                                ? <img src={require('../../image/product/down-arrow.png')}/>
-                                : <img src={require('../../image/product/up-arrow.png')}/>
+                                ? <img src={require('../../image/product/down-arrow.png')} alt="down-arrow"/>
+                                : <img src={require('../../image/product/up-arrow.png')} alt="up-arrow"/>
                         }
                     </div>
                 </div>
@@ -55,8 +55,8 @@ class Collapses extends Component {
                     <div>
                         {
                             this.state.collapseTwo
-                                ? <img src={require('../../image/product/down-arrow.png')}/>
-                                : <img src={require('../../image/product/up-arrow.png')}/>
+                                ? <img src={require('../../image/product/down-arrow.png')} alt="down-arrow"/>
+                                : <img src={require('../../image/product/up-arrow.png')} alt="up-arrow"/>
                         }
                     </div>
                 </div>
@@ -71,8 +71,8 @@ class Collapses extends Component {
                     <div>
                         {
                             this.state.collapseThree
-                                ? <img src={require('../../image/product/down-arrow.png')}/>
-                                : <img src={require('../../image/product/up-arrow.png')}/>
+                                ? <img src={require('../../image/product/down-arrow.png')} alt="down-arrow"/>
+                                : <img src={require('../../image/product/up-arrow.png')} alt="up-arrow"/>
                         }
                     </div>
 
@@ -88,8 +88,8 @@ class Collapses extends Component {
                     <div>
                         {
                             this.state.collapseFour
-                                ? <img src={require('../../image/product/down-arrow.png')}/>
-                                : <img src={require('../../image/product/up-arrow.png')}/>
+                                ? <img src={require('../../image/product/down-arrow.png')} alt="down-arrow"/>
+                                : <img src={require('../../image/product/up-arrow.png')} alt="up-arrow"/>
                         }
                     </div>
                 </div>
