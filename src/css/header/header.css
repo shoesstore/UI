@@ -4,21 +4,6 @@
     user-select: none;
 }
 
-
-.search-icon {
-    height: 25px;
-    margin-top: 5px;
-    padding-right: 10px;
-    user-select: none;
-}
-
-
-.search-input {
-    padding-right: 50px;
-    user-select: none;
-}
-
-
 .menu {
     user-select: none;
     display: flex;
@@ -59,4 +44,20 @@
 
 .login-option:hover {
     text-decoration: none;
+}
+
+.icon-search img {
+    height: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.cell-input {
+    width: 200px;
+    height: 10px
+}
+
+.input-g {
+    display: flex;
+    justify-content: flex-end;
 }

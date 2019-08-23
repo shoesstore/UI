@@ -1,7 +1,7 @@
-import React, { Component }                                                                                from 'react';
-import { Link }                                                                                            from "react-router-dom";
-import { Col, Collapse, Input, InputGroup, InputGroupAddon, Nav, Navbar, NavbarToggler, NavItem, NavLink } from "reactstrap";
-import '../css/header/header.css';
+import React, { Component }                                               from 'react';
+import { Link }                                                           from "react-router-dom";
+import { Col, Input, Navbar, NavbarToggler }                              from "reactstrap";
+import                                                                         '../css/header/header.css';
 
 
 export default class Header extends Component {
@@ -32,21 +32,21 @@ export default class Header extends Component {
                     </Col>
                     <Col xs="6" sm="4">
                         <NavbarToggler onClick={ () => this.toggle() } />
-                        <Collapse className="menu" isOpen={isOpen} navbar>
+                        <div className="menu" isOpen={isOpen}>
                             <Link to="#">MEN</Link>
                             <Link to="#">WOMEN</Link>
                             <Link to="/collections">COLLECTIONS</Link>
                             <Link to="#">CONTACT</Link>
-                        </Collapse>
+                        </div>
                     </Col>
                     <Col sm="4">
-                        <div className="search-input">
-                            <InputGroup style={{ width: 300 }}>
-                                <InputGroupAddon addonType="prepend">
-                                    <img className="search-icon" src={require("../image/header/search.png")} alt="search"/>
-                                </InputGroupAddon>
+                        <div className="input-g">
+                            <div className="icon-search">
+                                <img src={require("../image/header/search.png")} alt="search"/>
+                            </div>
+                            <div className="cell-input">
                                 <Input placeholder="Search" />
-                            </InputGroup>
+                            </div>
                         </div>
                     </Col>
                 </Navbar>
