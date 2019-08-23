@@ -8,7 +8,7 @@ class Collapses extends Component {
         collapseOne : false,
         collapseTwo : false,
         collapseThree : false,
-        collapaseFour : false,
+        collapseFour : false,
     };
 
     toggleOne() {
@@ -35,7 +35,7 @@ class Collapses extends Component {
                     <div className="left-nav-collapse-result"><strong>Itami:R-S</strong></div>
                 </Collapse>
 
-                <div className="left-nav-collapse" onClick={ () => this.toggleTwo() }>Color</div>
+                <div className="left-nav-collapse" onClick={ () => this.toggleTwo() }>Colour</div>
                 <Collapse isOpen={this.state.collapseTwo}>
                     <div className="left-nav-collapse-result"><strong>Itami:R-S</strong></div>
                 </Collapse>
