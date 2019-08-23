@@ -1,6 +1,7 @@
 import React,           { Component }               from 'react';
 import                  { BrowserRouter as Router } from "react-router-dom";
 import RouterProtect                                from './routes';
+import Spinner                                      from "./components/Spinner/Spinner";
 import Topbar                                       from "./layouts/Topbar";
 import Header                                       from "./layouts/Header";
 import Footer                                       from "./layouts/Footer";
@@ -8,14 +9,40 @@ import Footer                                       from "./layouts/Footer";
 
 export default class App extends Component {
 
-   render() {
-     return (
-        <Router>
-            <Topbar/>
-            <Header/>
-            <RouterProtect/>
-            <Footer/>
-        </Router>
-     );
-   }
+    state = {
+        loading: true
+    };
+
+
+    componentDidMount() {
+        this.timerHandle = setTimeout(() => this.setState({ loading: false }), 2000);
+    };
+
+
+    componentWillUnmount(){
+        if (this.timerHandle) {
+            clearTimeout(this.timerHandle);
+            this.timerHandle = 0;
+        }
+    };
+
+
+    render() {
+        return (
+            <Router>
+                {
+                    this.state.loading
+                    ?
+                        <Spinner/>
+                    :
+                        <div>
+                            <Topbar/>
+                            <Header/>
+                            <RouterProtect/>
+                            <Footer/>
+                        </div>
+                }
+            </Router>
+        );
+    }
 }

@@ -7,7 +7,6 @@ import                               '../css/carousel/carousel.css';
 import                               '../css/product/product.css';
 
 
-
 export default class HomePage extends Component {
 
     render() {
