@@ -4,6 +4,7 @@ import FormRegister                                                     from "..
 import FormLogin                                                        from "../components/Form/FormLogin";
 import { ButtonShoesStore }                                             from '../ui';
 import                                                                       '../css/topbar/topbar.css';
+import {Link} from "react-router-dom";
 
 
 export default class Topbar extends Component {
@@ -33,6 +34,11 @@ export default class Topbar extends Component {
         return (
             <div>
                 <div className="topbar">
+                    <div>
+                        <Link to="/cart">
+                            <img style={{ height: 30, width: 30, marginRight: 15, marginTop: 3 }} src={require('../image/cart/icon-cart.jpg')}/>
+                        </Link>
+                    </div>
                     <div>
                         <div>
                             <NavLink onClick={ () => this.toggleOne() }>Login</NavLink>

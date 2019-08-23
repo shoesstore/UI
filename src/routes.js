@@ -3,6 +3,7 @@ import { Route, Switch }    from 'react-router-dom';
 import HomePage             from './containers/HomePage';
 import ProductListPage      from "./containers/ProductListPage";
 import ProductDetailPage    from "./containers/ProductDetailPage";
+import CartPage             from "./containers/CartPage";
 
 
 export default class RouterProtect extends Component {
@@ -12,6 +13,7 @@ export default class RouterProtect extends Component {
                 <Route exact path="/"            component={HomePage}/>
                 <Route exact path="/collections" component={ProductListPage}/>
                 <Route exact path="/product"     component={ProductDetailPage}/>
+                <Route exact path="/cart"        component={CartPage}/>
             </Switch>
         )
     }
