@@ -30,22 +30,69 @@ class Collapses extends Component {
     render() {
         return (
             <div>
-                <div className="left-nav-collapse" onClick={ () => this.toggleOne() }>Colour</div>
+                <div className="left-nav-collapse" onClick={ () => this.toggleOne() }>
+                    <div>
+                        Colour
+                    </div>
+                    <div>
+                        {
+                            this.state.collapseOne
+                                ? <img src={require('../../image/product/down-arrow.png')}/>
+                                : <img src={require('../../image/product/up-arrow.png')}/>
+                        }
+                    </div>
+                </div>
                 <Collapse isOpen={this.state.collapseOne}>
-                    <div className="left-nav-collapse-result">Itami:R-S</div>
+                    <div className="left-nav-collapse-result">
+                        Itami:R-S
+                    </div>
                 </Collapse>
 
-                <div className="left-nav-collapse" onClick={ () => this.toggleTwo() }>Brand</div>
+                <div className="left-nav-collapse" onClick={ () => this.toggleTwo() }>
+                    <div>
+                        Brand
+                    </div>
+                    <div>
+                        {
+                            this.state.collapseTwo
+                                ? <img src={require('../../image/product/down-arrow.png')}/>
+                                : <img src={require('../../image/product/up-arrow.png')}/>
+                        }
+                    </div>
+                </div>
                 <Collapse isOpen={this.state.collapseTwo}>
                     <div className="left-nav-collapse-result">Itami:R-S</div>
                 </Collapse>
 
-                <div className="left-nav-collapse" onClick={ () => this.toggleThree() }>Size</div>
+                <div className="left-nav-collapse" onClick={ () => this.toggleThree() }>
+                    <div>
+                        Size
+                    </div>
+                    <div>
+                        {
+                            this.state.collapseThree
+                                ? <img src={require('../../image/product/down-arrow.png')}/>
+                                : <img src={require('../../image/product/up-arrow.png')}/>
+                        }
+                    </div>
+
+                </div>
                 <Collapse isOpen={this.state.collapseThree}>
                     <div className="left-nav-collapse-result">Itami:R-S</div>
                 </Collapse>
 
-                <div className="left-nav-collapse" onClick={ () => this.toggleFour() }>Price</div>
+                <div className="left-nav-collapse" onClick={ () => this.toggleFour() }>
+                    <div>
+                        Price
+                    </div>
+                    <div>
+                        {
+                            this.state.collapseFour
+                                ? <img src={require('../../image/product/down-arrow.png')}/>
+                                : <img src={require('../../image/product/up-arrow.png')}/>
+                        }
+                    </div>
+                </div>
                 <Collapse isOpen={this.state.collapseFour}>
                     <div className="left-nav-collapse-result">Itami:R-S</div>
                 </Collapse>

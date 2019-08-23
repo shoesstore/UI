@@ -1,6 +1,6 @@
 import React, { Component }                                               from 'react';
 import { Link }                                                           from "react-router-dom";
-import { Col, Input, Navbar, NavbarToggler }                              from "reactstrap";
+import {Button, Col, Input, InputGroup, InputGroupAddon, Navbar, NavbarToggler} from "reactstrap";
 import                                                                         '../css/header/header.css';
 
 
@@ -27,7 +27,7 @@ export default class Header extends Component {
                 <Navbar color="light" light expand="md">
                     <Col xs="6" sm="4">
                         <Link to="/">
-                            <img className="brand-shoes" src={require("../image/header/brand.png")} alt="logo" />
+                            <img className="brand-shoes" src={require("../image/header/footwear.png")} alt="logo" />
                         </Link>
                     </Col>
                     <Col xs="6" sm="4">
@@ -41,12 +41,12 @@ export default class Header extends Component {
                     </Col>
                     <Col sm="4">
                         <div className="input-g">
-                            <div className="icon-search">
-                                <img src={require("../image/header/search.png")} alt="search"/>
-                            </div>
-                            <div className="cell-input">
-                                <Input placeholder="Search" />
-                            </div>
+                            <InputGroup>
+                                <InputGroupAddon>
+                                    <Button><img style={{ height: 20 }} src={require("../image/header/magnifier.png")} alt="search"/></Button>
+                                </InputGroupAddon>
+                                <Input style={{ maxWidth: 300 }} placeholder="Search" />
+                            </InputGroup>
                         </div>
                     </Col>
                 </Navbar>

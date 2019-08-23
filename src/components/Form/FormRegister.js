@@ -9,7 +9,7 @@ export default class FormRegister extends Component {
             <Form row>
                 <FormGroup>
                     <center>
-                        <img className="brand-shoes-logo" src={require("../../image/header/brand.png")} alt="logo"/>
+                        <img className="brand-shoes-logo" src={require("../../image/header/footwear.png")} alt="logo"/>
                     </center>
                 </FormGroup>
                 <FormGroup>

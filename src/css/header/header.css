@@ -1,6 +1,4 @@
 .brand-shoes {
-    height: 80px;
-    width: 90px;
     user-select: none;
 }
 
@@ -46,21 +44,10 @@
     text-decoration: none;
 }
 
-.icon-search img {
-    height: 30px;
-    padding-right: 10px;
-    padding-top: 5px;
-    user-select: none;
-}
-
-.cell-input {
-    width: 200px;
-    height: 10px;
-    user-select: none;
-}
 
 .input-g {
     display: flex;
     justify-content: flex-end;
     user-select: none;
+    padding-left: 90px;
 }
