@@ -33,11 +33,10 @@ export default class Header extends Component {
                     <Col xs="6" sm="4">
                         <NavbarToggler onClick={ () => this.toggle() } />
                         <Collapse className="menu" isOpen={isOpen} navbar>
-                            <Nav navbar>
-                                <NavItem><NavLink href="#">MEN</NavLink></NavItem>
-                                <NavItem><NavLink href="#">WOMEN</NavLink></NavItem>
-                                <NavItem><NavLink href="#">COLLECTIONS</NavLink></NavItem>
-                            </Nav>
+                            <Link to="#">MEN</Link>
+                            <Link to="#">WOMEN</Link>
+                            <Link to="/collections">COLLECTIONS</Link>
+                            <Link to="#">CONTACT</Link>
                         </Collapse>
                     </Col>
                     <Col sm="4">
