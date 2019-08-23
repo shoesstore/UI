@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Motion, spring }   from 'react-motion';
-import                           '../../image/text/text.css';
+import '../../css/text/text.css';
 
 
 export default class MotionText extends Component {
@@ -11,14 +11,15 @@ export default class MotionText extends Component {
                 <Motion defaultStyle={{ right: 20000 }} style={{ right: spring(100) }}>
                     {
                         value => (
-                            <h3 style={{ paddingRight: 320, position: 'absolute', ...value }}>
-                                LIST PRODUCT
+                            <h3 style={{ display: "flex", paddingRight: 710, position: 'absolute', ...value }}>
                                 <img
-                                    width={60}
-                                    height={60}
-                                    src={require('../../image/cart/icon-cart.jpg')}
+                                    style={{ width: 40, height: 40, paddingRight: 10 }}
+                                    src={require('../../image/product/listing-option.png')}
                                     alt="img"
                                 />
+                                <div className="title-list-product">
+                                    LIST PRODUCT
+                                </div>
                             </h3>
                         )
                     }
