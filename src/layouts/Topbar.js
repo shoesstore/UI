@@ -64,7 +64,6 @@ export default class Topbar extends Component {
                             </ModalFooter>
                         </Modal>
                     </div>
-
                     <div>
                         <div>
                             <NavLink onClick={() => this.toggleTwo()}>Register</NavLink>

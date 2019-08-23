@@ -50,14 +50,17 @@
     height: 30px;
     padding-right: 10px;
     padding-top: 5px;
+    user-select: none;
 }
 
 .cell-input {
     width: 200px;
-    height: 10px
+    height: 10px;
+    user-select: none;
 }
 
 .input-g {
     display: flex;
     justify-content: flex-end;
+    user-select: none;
 }
