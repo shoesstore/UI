@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
 import ProductList           from "../components/Product/ProductList";
 import Collapses             from "../components/Collapse/Collapse";
-import MotionText            from "../components/Text/MotionText";
+import MotionTextProductListPage            from "../components/Text/MotionTextProductListPage";
 import Pagin                 from "../components/Pagin/Pagin";
 import                            "../css/product/productlist.css";
 import {BreadCrumbShoeStore} from "../ui";
@@ -13,7 +13,7 @@ export default class ProductListPage extends Component {
         return(
             <div className="container-fluid">
                 <BreadCrumbShoeStore page="Collections"/>
-                <MotionText/>
+                <MotionTextProductListPage/>
                 <div className="row col-md-12">
                     <div className="col-md-2 left-nav-wrapper">
                         <Collapses/>
