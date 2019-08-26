@@ -10,6 +10,7 @@ export default class MotionTextProductListPage extends Component {
                     src={require('../../image/product/listing-option.png')}
                     title="LIST PRODUCT"
                     alt="img"
+                    style={{ width: 40, height: 40, paddingRight: 10 }}
                 />
             </div>
         );

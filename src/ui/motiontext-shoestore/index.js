@@ -5,23 +5,24 @@ import                               '../../css/text/text.css';
 
 const MotionTextShoesStore = (props) => {
 
-    const { title, src, alt } = props;
+    const { title, src, alt, style, isCardPage } = props;
 
     return (
         <div className="motion-text">
             <Motion defaultStyle={{ right: 20000 }} style={{ right: spring(100) }}>
                 {
                     value => (
-                        <h3 style={{ display: "flex", paddingRight: 710, position: 'absolute', ...value }}>
+                        <div className=""  style={{...value }}>
                             <img
-                                style={{ width: 40, height: 40, paddingRight: 10 }}
+                                className={ isCardPage ? "classCardPage" : "classListPage" }
+                                style={{ height: isCardPage ? 50 : 70 }}
                                 src={src}
                                 alt={alt}
                             />
-                            <div className="title-list-product">
+                            <p className="title-list-product">
                                 { title }
-                            </div>
-                        </h3>
+                            </p>
+                        </div>
                     )
                 }
             </Motion>
