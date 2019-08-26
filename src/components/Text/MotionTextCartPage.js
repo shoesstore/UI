@@ -1,6 +1,6 @@
 import React, { Component }      from 'react';
 import { MotionTextShoesStore }  from "../../ui";
-import "./motion.css"
+import                                "./motion.css"
 
 
 export default class MotionTextCartPage extends Component {
@@ -11,7 +11,8 @@ export default class MotionTextCartPage extends Component {
                     src={require('../../image/cart/shopping-cart-icon.png')}
                     title="CART"
                     alt="img"
-                    className="motionCard"
+                    className="classIconCartPage"
+                    isCart={true}
                 />
             </div>
         );

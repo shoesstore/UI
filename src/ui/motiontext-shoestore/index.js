@@ -1,11 +1,11 @@
 import React                    from 'react';
 import { Motion, spring }       from "react-motion";
-import '../../components/Text/text.css';
+import                               '../../components/Text/text.css';
 
 
 const MotionTextShoesStore = (props) => {
 
-    const { title, src, alt, style, isCardPage } = props;
+    const { title, src, alt, isCartPage } = props;
 
     return (
         <div className="motion-text">
@@ -14,8 +14,7 @@ const MotionTextShoesStore = (props) => {
                     value => (
                         <div className=""  style={{...value }}>
                             <img
-                                className={ isCardPage ? "classCardPage" : "classListPage" }
-                                style={{ height: isCardPage ? 50 : 70 }}
+                                className={ isCartPage ? "classIconCartPage" : "classIconProductListPage" }
                                 src={src}
                                 alt={alt}
                             />

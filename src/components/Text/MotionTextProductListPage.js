@@ -1,5 +1,6 @@
 import React, { Component }      from 'react';
 import { MotionTextShoesStore }  from "../../ui";
+import                                './motion.css';
 
 
 export default class MotionTextProductListPage extends Component {
@@ -10,7 +11,7 @@ export default class MotionTextProductListPage extends Component {
                     src={require('../../image/product/listing-option.png')}
                     title="LIST PRODUCT"
                     alt="img"
-                    style={{ width: 40, height: 40, paddingRight: 10 }}
+                    className="classIconProductListPage"
                 />
             </div>
         );
