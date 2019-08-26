@@ -3,7 +3,7 @@ import ProductList           from "../components/Product/ProductList";
 import Collapses             from "../components/Collapse/Collapse";
 import MotionTextProductListPage            from "../components/Text/MotionTextProductListPage";
 import Pagin                 from "../components/Pagin/Pagin";
-import                            "../css/product/productlist.css";
+import "../components/Product/productlist.css";
 import {BreadCrumbShoeStore} from "../ui";
 
 

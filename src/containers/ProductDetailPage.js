@@ -30,7 +30,7 @@ export default class ProductDetailPage extends Component {
                         </div>
                         <div>
                         <ButtonShoesStore
-                            className="button-buy"
+                            className="button-product"
                             color="secondary"
                             width={200}
                             height={50}
@@ -38,6 +38,16 @@ export default class ProductDetailPage extends Component {
                             borderRadius={25}
                         >
                             Add to cart
+                        </ButtonShoesStore>
+                        <ButtonShoesStore
+                            className="button-product"
+                            color="secondary"
+                            width={200}
+                            height={50}
+                            fontSize={20}
+                            borderRadius={25}
+                        >
+                            Favourite ❤
                         </ButtonShoesStore>
                         </div>
                     </div>

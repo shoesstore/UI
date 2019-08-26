@@ -1,3 +1,8 @@
+.product {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
 .name-list-product {
     display: flex;
     justify-content: center;
@@ -18,11 +23,6 @@
     padding-left: 15px;
     justify-content: center;
     user-select: none;
-}
-
-.product {
-    padding-left: 20px;
-    padding-bottom: 20px;
 }
 
 .name-price {
@@ -63,3 +63,6 @@
     font-size: 25px;
 }
 
+.button-product {
+    margin-top: 10px;
+}

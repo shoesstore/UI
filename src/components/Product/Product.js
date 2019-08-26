@@ -2,7 +2,7 @@ import React                                   from 'react';
 
 import { Card, CardBody, CardImg, CardTitle }  from "reactstrap";
 import { ButtonShoesStore }                    from "../../ui";
-import                                              '../../css/product/product.css';
+import './product.css';
 
 
 const Product = (props) => {

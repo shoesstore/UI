@@ -36,7 +36,7 @@ export default class Topbar extends Component {
                 <div className="topbar">
                     <div>
                         <Link to="/cart">
-                            <img style={{ height: 30, width: 30, marginRight: 15, marginTop: 3 }} src={require('../image/cart/icon-cart.jpg')} alt="icon-cart"/>
+                            <img style={{ height: 30, width: 30, marginRight: 15, marginTop: 3 }} src={require('../../image/cart/icon-cart.jpg')} alt="icon-cart"/>
                         </Link>
                     </div>
                     <div>

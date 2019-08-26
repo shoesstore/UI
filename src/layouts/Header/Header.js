@@ -27,7 +27,7 @@ export default class Header extends Component {
                 <Navbar color="light" light expand="md">
                     <Col xs="6" sm="4">
                         <Link to="/">
-                            <img className="brand-shoes" src={require("../image/header/footwear.png")} alt="logo" />
+                            <img className="brand-shoes" src={require("../../image/header/footwear.png")} alt="logo" />
                         </Link>
                     </Col>
                     <Col xs="6" sm="4">
@@ -43,7 +43,7 @@ export default class Header extends Component {
                         <div className="input-g">
                             <InputGroup>
                                 <InputGroupAddon>
-                                    <Button><img style={{ height: 20 }} src={require("../image/header/magnifier.png")} alt="search"/></Button>
+                                    <Button><img style={{ height: 20 }} src={require("../../image/header/magnifier.png")} alt="search"/></Button>
                                 </InputGroupAddon>
                                 <Input style={{ maxWidth: 300 }} placeholder="Search" />
                             </InputGroup>
