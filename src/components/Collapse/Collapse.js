@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse } from 'reactstrap';
-import "../../css/collapse/collapse.css";
+import "./collapse.css";
 
 class Collapses extends Component {
 

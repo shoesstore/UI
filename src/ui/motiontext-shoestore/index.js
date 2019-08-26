@@ -1,6 +1,6 @@
 import React                    from 'react';
 import { Motion, spring }       from "react-motion";
-import                               '../../css/text/text.css';
+import '../../components/Text/text.css';
 
 
 const MotionTextShoesStore = (props) => {

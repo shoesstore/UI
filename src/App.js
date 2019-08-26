@@ -2,9 +2,9 @@ import React,           { Component }               from 'react';
 import                  { BrowserRouter as Router } from "react-router-dom";
 import RouterProtect                                from './routes';
 import Spinner                                      from "./components/Spinner/Spinner";
-import Topbar                                       from "./layouts/Topbar";
-import Header                                       from "./layouts/Header";
-import Footer                                       from "./layouts/Footer";
+import Topbar                                       from "./layouts/Topbar/Topbar";
+import Header                                       from "./layouts/Header/Header";
+import Footer                                       from "./layouts/Footer/Footer";
 
 
 export default class App extends Component {

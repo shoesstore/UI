@@ -1,9 +1,9 @@
 import React, { Component }                                             from 'react';
 import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink }          from "reactstrap";
-import FormRegister                                                     from "../components/Form/FormRegister";
-import FormLogin                                                        from "../components/Form/FormLogin";
-import { ButtonShoesStore }                                             from '../ui';
-import                                                                       '../css/topbar/topbar.css';
+import FormRegister                                                     from "../../components/Form/FormRegister";
+import FormLogin                                                        from "../../components/Form/FormLogin";
+import { ButtonShoesStore }                                             from '../../ui';
+import './topbar.css';
 import {Link} from "react-router-dom";
 
 

@@ -3,7 +3,7 @@ import Carousel                 from "../components/Carousel/Carousel";
 import ProductList              from "../components/Product/ProductList";
 import BannerShoes              from "../components/Banner/BannerShoes";
 import BannerAdvertisement      from "../components/Banner/BannerAdvertisement";
-import                               '../css/carousel/carousel.css';
+import '../components/Carousel/carousel.css';
 import                               '../css/product/product.css';
 
 

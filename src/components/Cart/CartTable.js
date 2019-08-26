@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table }            from 'reactstrap';
 import ProductInCartTable   from './ProductInCartTable';
-import                           '../../css/cart/cart.css';
+import './cart.css';
 
 
 export default class CartTable extends Component {

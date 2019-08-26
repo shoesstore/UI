@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ButtonShoesStore } from "../../ui";
-import                           '../../css/banner/banner.css';
+import './banner.css';
 
 
 export default class BannerShoes extends Component {

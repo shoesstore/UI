@@ -1,6 +1,6 @@
 import React, { Component }      from 'react';
 import { ScalingSquaresSpinner } from 'react-epic-spinners'
-import                                '../../css/spinner/spinner.css';
+import './spinner.css';
 
 
 export default class Spinner extends Component {

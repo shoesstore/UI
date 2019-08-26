@@ -1,6 +1,6 @@
 import React, { Component }                           from 'react';
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-import '../../css/pagin/pagin.css';
+import './pagin.css';
 
 
 export default class Pagin extends Component {

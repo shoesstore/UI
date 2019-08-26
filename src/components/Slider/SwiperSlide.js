@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Swiper               from 'react-id-swiper';
-import '../../css/slide/slide.css';
+import './slide.css';
 
 export default class SwiperSlide extends Component {
     render() {
