@@ -12,7 +12,7 @@ const MotionTextShoesStore = (props) => {
             <Motion defaultStyle={{ right: 20000 }} style={{ right: spring(100) }}>
                 {
                     value => (
-                        <div className=""  style={{...value }}>
+                        <div className={ isCartPage ? "classIconCPage" : "classIconPLPage" } style={{ ...value }}>
                             <img
                                 className={ isCartPage ? "classIconCartPage" : "classIconProductListPage" }
                                 src={src}

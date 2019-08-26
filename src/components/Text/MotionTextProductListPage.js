@@ -11,7 +11,8 @@ export default class MotionTextProductListPage extends Component {
                     src={require('../../image/product/listing-option.png')}
                     title="LIST PRODUCT"
                     alt="img"
-                    className="classIconProductListPage"
+                    className="classIconProductListPage classIconPLPage"
+                    isCartPage={false}
                 />
             </div>
         );

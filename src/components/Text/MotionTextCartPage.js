@@ -11,8 +11,8 @@ export default class MotionTextCartPage extends Component {
                     src={require('../../image/cart/shopping-cart-icon.png')}
                     title="CART"
                     alt="img"
-                    className="classIconCartPage"
-                    isCart={true}
+                    className="classIconCartPage classIconCPage"
+                    isCartPage={true}
                 />
             </div>
         );

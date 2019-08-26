@@ -1,12 +1,27 @@
 .classIconProductListPage {
-    display: flex;
     width: 30px;
-    height: 30px;
+    height: 29px;
+    margin-top: 7px;
+    margin-right: 4px;
 }
 
 
 .classIconCartPage {
-    display: flex;
     width: 30px;
     height: 30px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.classIconPLPage {
+    display: flex;
+    margin-right: 700px;
+    position: absolute
+}
+
+.classIconCPage {
+    display: flex;
+    margin-right: 1100px;
+    margin-top: 20px;
+    position: absolute;
 }
