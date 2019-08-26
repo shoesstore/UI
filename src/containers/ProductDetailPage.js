@@ -21,6 +21,8 @@ export default class ProductDetailPage extends Component {
                                 <div className="info-product-name col-sm">
                                     Men's Running Shoe
                                     <h2>Nike Joyride Run Flyknit</h2>
+                                </div>
+                                <div className="start-rating">
                                     <StarRating/>
                                 </div>
                                 <div className="col-sm">
@@ -32,7 +34,7 @@ export default class ProductDetailPage extends Component {
                         <ButtonShoesStore
                             className="button-product"
                             color="secondary"
-                            width={200}
+                            width={300}
                             height={50}
                             fontSize={20}
                             borderRadius={25}
@@ -42,12 +44,12 @@ export default class ProductDetailPage extends Component {
                         <ButtonShoesStore
                             className="button-product"
                             color="secondary"
-                            width={200}
+                            width={300}
                             height={50}
                             fontSize={20}
                             borderRadius={25}
                         >
-                            Favourite ❤
+                            Favourite
                         </ButtonShoesStore>
                         </div>
                     </div>
