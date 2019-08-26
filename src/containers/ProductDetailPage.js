@@ -1,19 +1,20 @@
 import React, { Component }     from 'react';
-
+import { Link }                 from "react-router-dom";
 import StarRating               from "../components/StarRating/StarRating";
 import { ButtonShoesStore }     from "../ui";
 
-export default class ProductDetailPage extends Component {
-    render() {
 
+export default class ProductDetailPage extends Component {
+
+    render() {
         return (
             <div className="container">
                 <div className="row no-gutters">
                     <div className="col-12 col-sm-6 col-md-8 image-product">
-                        <img style={{ height: 400,width:300 }} src={require("../image/product/shoe1-1.jpg")} alt="shoes1"/>
-                        <img style={{ height: 400,width:300 }} src={require("../image/product/shoe1-0.jpg")} alt="shoes1"/>
-                        <img style={{ height: 400,width:300 }} src={require("../image/product/shoe1-2.jpg")} alt="shoes1"/>
-                        <img style={{ height: 400,width:300 }} src={require("../image/product/shoe1.jpg")} alt="shoes1"/>
+                        <img style={{ height: 400, width:300 }} src={require("../image/product/shoe1-1.jpg")} alt="shoes1"/>
+                        <img style={{ height: 400, width:300 }} src={require("../image/product/shoe1-0.jpg")} alt="shoes1"/>
+                        <img style={{ height: 400, width:300 }} src={require("../image/product/shoe1-2.jpg")} alt="shoes1"/>
+                        <img style={{ height: 400, width:300 }} src={require("../image/product/shoe1.jpg")} alt="shoes1"/>
                     </div>
                     <div className="col-6 col-md-4 info-product">
                         <div className="info-product">
@@ -39,7 +40,9 @@ export default class ProductDetailPage extends Component {
                             fontSize={20}
                             borderRadius={25}
                         >
-                            Add to cart
+                            <Link to="/cart">
+                                Add to cart
+                            </Link>
                         </ButtonShoesStore>
                         <ButtonShoesStore
                             className="button-product"
@@ -53,7 +56,6 @@ export default class ProductDetailPage extends Component {
                         </ButtonShoesStore>
                         </div>
                     </div>
-
                 </div>
             </div>
         );

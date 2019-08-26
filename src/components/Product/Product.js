@@ -1,8 +1,8 @@
 import React                                   from 'react';
-
+import { Link }                                from "react-router-dom";
 import { Card, CardBody, CardImg, CardTitle }  from "reactstrap";
 import { ButtonShoesStore }                    from "../../ui";
-import './product.css';
+import                                              './product.css';
 
 
 const Product = (props) => {
@@ -31,7 +31,9 @@ const Product = (props) => {
                             fontSize={10}
                             borderRadius="25px"
                         >
-                            Quick Review
+                            <Link to="/product">
+                                Quick Review
+                            </Link>
                         </ButtonShoesStore>
                     </div>
                     <div>
@@ -42,7 +44,9 @@ const Product = (props) => {
                             fontSize={10}
                             borderRadius="25px"
                         >
-                            Add To Cart
+                            <Link to="/cart">
+                                Add To Cart
+                            </Link>
                         </ButtonShoesStore>
                     </div>
                 </div>
@@ -52,4 +56,3 @@ const Product = (props) => {
 };
 
 export default Product;
-

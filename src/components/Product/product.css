@@ -65,7 +65,16 @@
 
 .button-product {
     margin-top: 10px;
-    font-size: inherit
+    font-size: inherit;
+}
+
+.button-product a {
+    color: white;
+}
+
+.button-product a:hover {
+    text-decoration: none;
+    color: #111111;
 }
 
 .no-gutters {
