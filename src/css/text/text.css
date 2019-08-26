@@ -4,5 +4,7 @@
 }
 
 .title-list-product {
-    padding-top: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -2px
 }

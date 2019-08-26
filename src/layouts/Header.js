@@ -1,7 +1,7 @@
-import React, { Component }                                               from 'react';
-import { Link }                                                           from "react-router-dom";
-import {Button, Col, Input, InputGroup, InputGroupAddon, Navbar, NavbarToggler} from "reactstrap";
-import                                                                         '../css/header/header.css';
+import React, { Component }                                                       from 'react';
+import { Link }                                                                   from "react-router-dom";
+import { Button, Col, Input, InputGroup, InputGroupAddon, Navbar, NavbarToggler } from "reactstrap";
+import                                                                                 '../css/header/header.css';
 
 
 export default class Header extends Component {
