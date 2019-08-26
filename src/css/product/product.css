@@ -42,13 +42,24 @@
     padding: 20px 4px;
 }
 
-.column{
-    flex: 50%;
+.image-product {
+    flex: 20%;
     padding: 20px 4px;
-    column: 7;
+    columns: auto;
 }
 
-.column img {
+.image-product img {
     margin: 8px 5px 5px;
     vertical-align: middle;
 }
+
+.info-product{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 4px;
+}
+
+.info-product-name{
+    font-size: 25px;
+}
+
