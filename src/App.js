@@ -5,6 +5,7 @@ import Spinner                                      from "./components/Spinner/S
 import Topbar                                       from "./layouts/Topbar/Topbar";
 import Header                                       from "./layouts/Header/Header";
 import Footer                                       from "./layouts/Footer/Footer";
+import                                                   './App.css';
 
 
 export default class App extends Component {
@@ -36,8 +37,10 @@ export default class App extends Component {
                         <Spinner/>
                     :
                         <div>
-                            <Topbar/>
-                            <Header/>
+                            <div className="z-index">
+                                <Topbar/>
+                                <Header/>
+                            </div>
                             <RouterProtect/>
                             <Footer/>
                         </div>
