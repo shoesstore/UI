@@ -1,113 +1,11 @@
 .spinner {
     position: absolute;
-    left: 40%;
-
+    top: 45%;
+    left: 47%;
     animation-name: spinner;
     animation-duration: 3s;
-
-    background-image: url("../../image/spinner/tony-pham-stare.png");
-    background-repeat: no-repeat;
-    background-size: 200px;
-    background-position: center;
-    border-radius: 25px;
-    height: 300px;
 }
 
 @keyframes spinner {
-    100% { transform: rotate(1800deg); }
-}
-
-.title-of-tony-pham {
-    text-align: center;
-    margin-top: 280px;
-    margin-left: 20px;
-    font-weight: bold;
-    color: pink;
-}
-
-.co-founder {
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    padding-top: 350px;
-}
-
-.spinner-duy {
-    position: absolute;
-    left: 10%;
-
-    animation-name: spinner;
-    animation-duration: 5s;
-
-    background-image: url("../../image/spinner/co-founder-tienduy.png");
-    background-repeat: no-repeat;
-    background-size: 150px;
-    background-position: center;
-    border-radius: 25px;
-    height: 300px;
-}
-
-@keyframes spinner-duy {
-    100% { transform: rotate(360deg); }
-}
-
-.title-of-tien-duy {
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    color: red;
-}
-
-
-.spinner-dung {
-    position: absolute;
-    left: 40%;
-
-    animation-name: spinner;
-    animation-duration: 5s;
-
-    background-image: url("../../image/spinner/co-founder-chidung.png");
-    background-repeat: no-repeat;
-    background-size: 150px;
-    background-position: center;
-    border-radius: 25px;
-    height: 300px;
-}
-
-@keyframes spinner-dung {
-    100% { transform: rotate(360deg); }
-}
-
-.title-of-chi-dung {
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    color: green;
-}
-
-
-.spinner-hai {
-    position: absolute;
-    left: 70%;
-
-    animation-name: spinner;
-    animation-duration: 5s;
-
-    background-image: url("../../image/spinner/co-founder-longhai.png");
-    background-repeat: no-repeat;
-    background-size: 150px;
-    background-position: center;
-    border-radius: 25px;
-    height: 300px;
-}
-
-@keyframes spinner-hai {
-    100% { transform: rotate(360deg); }
-}
-
-.title-of-long-hai {
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    color: blue;
+    100% { transform: rotate(36000deg); }
 }

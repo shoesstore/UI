@@ -15,7 +15,7 @@ export default class App extends Component {
 
 
     componentDidMount() {
-        this.timerHandle = setTimeout(() => this.setState({ loading: false }), 6000);
+        this.timerHandle = setTimeout(() => this.setState({ loading: false }), 2000);
     };
 
 
