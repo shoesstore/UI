@@ -18,9 +18,11 @@ const MotionTextShoesStore = (props) => {
                                 src={src}
                                 alt={alt}
                             />
-                            <p className="title-list-product">
-                                { title }
-                            </p>
+                            <div className="title-list-product">
+                                <p>
+                                    { title }
+                                </p>
+                            </div>
                         </div>
                     )
                 }

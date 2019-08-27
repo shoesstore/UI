@@ -1,10 +1,10 @@
-import React, { Component }  from 'react';
-import ProductList           from "../components/Product/ProductList";
-import Collapses             from "../components/Collapse/Collapse";
-import MotionTextProductListPage            from "../components/Text/MotionTextProductListPage";
-import Pagin                 from "../components/Pagin/Pagin";
-import "../components/Product/productlist.css";
-import {BreadCrumbShoeStore} from "../ui";
+import React, { Component }         from 'react';
+import ProductList                  from "../components/Product/ProductList";
+import Collapses                    from "../components/Collapse/Collapse";
+import MotionTextProductListPage    from "../components/Text/MotionTextProductListPage";
+import Pagin                        from "../components/Pagin/Pagin";
+import { BreadCrumbShoeStore }      from "../ui";
+import                                   "../components/Product/productlist.css";
 
 
 export default class ProductListPage extends Component {
