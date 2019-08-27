@@ -9,7 +9,7 @@ export default class Spinner extends Component {
         return (
             <div className="spinner">
                 <ScalingSquaresSpinner
-                    size={200}
+                    size={150}
                     color="black"
                 />
             </div>
