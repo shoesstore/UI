@@ -1,10 +1,10 @@
 import React, { Component }                                             from 'react';
+import { Link }                                                         from "react-router-dom";
 import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink }          from "reactstrap";
 import FormRegister                                                     from "../../components/Form/FormRegister";
 import FormLogin                                                        from "../../components/Form/FormLogin";
 import { ButtonShoesStore }                                             from '../../ui';
-import './topbar.css';
-import {Link} from "react-router-dom";
+import                                                                       './topbar.css';
 
 
 export default class Topbar extends Component {
@@ -32,7 +32,7 @@ export default class Topbar extends Component {
         const { modalOne, modalTwo } = this.state;
 
         return (
-            <div>
+            <div className="topbar-total">
                 <div className="topbar">
                     <div>
                         <Link to="/cart">

@@ -23,7 +23,7 @@ export default class Header extends Component {
         const { isOpen } = this.state;
 
         return (
-            <div>
+            <div className="header">
                 <Navbar color="light" light expand="md">
                     <Col xs="6" sm="4">
                         <Link to="/">
