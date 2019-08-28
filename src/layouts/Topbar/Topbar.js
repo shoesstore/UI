@@ -1,17 +1,20 @@
 import React, { Component }                                             from 'react';
-import { Link }                                                         from "react-router-dom";
 import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink }          from "reactstrap";
 import FormRegister                                                     from "../../components/Form/FormRegister";
 import FormLogin                                                        from "../../components/Form/FormLogin";
 import { ButtonShoesStore }                                             from '../../ui';
 import                                                                       './topbar.css';
+    import ButtonGroup                                                  from "reactstrap/es/ButtonGroup";
+import ButtonDropdown                                                   from "reactstrap/es/ButtonDropdown";
+import DropdownToggle                                                   from "reactstrap/es/DropdownToggle";
 
 
 export default class Topbar extends Component {
 
     state = {
         modalOne: false,
-        modalTwo: false
+        modalTwo: false,
+        dropdown: false,
     };
 
 
@@ -27,6 +30,12 @@ export default class Topbar extends Component {
         })
     }
 
+    toggleThree() {
+        this.setState({
+            dropdown: !this.state.dropdown
+        })
+    };
+
     render() {
 
         const { modalOne, modalTwo } = this.state;
@@ -34,11 +43,16 @@ export default class Topbar extends Component {
         return (
             <div className="topbar-total">
                 <div className="topbar">
-                    <div>
-                        <Link to="/cart">
-                            <img style={{ height: 30, width: 30, marginRight: 15, marginTop: 3 }} src={require('../../image/cart/icon-cart.jpg')} alt="icon-cart"/>
-                        </Link>
-                    </div>
+                    <ButtonGroup>
+                        <ButtonDropdown isOpen={this.state.dropdown} toggle={ () => this.toggleThree() }>
+                            <DropdownToggle style={{ background: "#fcfcfc", height:50 }}>
+                                <img style={{ height: 30, width: 30, marginRight: 15, marginTop: 3 }}
+                                     src={require('../../image/cart/icon-cart.jpg')}
+                                     alt="icon-cart"
+                                />
+                            </DropdownToggle>
+                        </ButtonDropdown>
+                    </ButtonGroup>
                     <div>
                         <div>
                             <NavLink onClick={ () => this.toggleOne() }>Login</NavLink>
