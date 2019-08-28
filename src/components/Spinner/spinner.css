@@ -3,9 +3,9 @@
     top: 45%;
     left: 47%;
     animation-name: spinner;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
 }
 
 @keyframes spinner {
-    100% { transform: rotate(36000deg); }
+    100% { transform: rotate(720deg); }
 }

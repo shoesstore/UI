@@ -48,9 +48,10 @@ class Collapses extends Component {
                     </div>
                 </Collapse>
 
+
                 <div className="left-nav-collapse" onClick={ () => this.toggleTwo() }>
                     <div>
-                        Brand
+                        Size
                     </div>
                     <div>
                         {
@@ -59,6 +60,7 @@ class Collapses extends Component {
                                 : <img src={require('../../image/product/up-arrow.png')} alt="up-arrow"/>
                         }
                     </div>
+
                 </div>
                 <Collapse isOpen={this.state.collapseTwo}>
                     <div className="left-nav-collapse-result">Itami:R-S</div>
@@ -66,7 +68,7 @@ class Collapses extends Component {
 
                 <div className="left-nav-collapse" onClick={ () => this.toggleThree() }>
                     <div>
-                        Size
+                        Price
                     </div>
                     <div>
                         {
@@ -75,15 +77,15 @@ class Collapses extends Component {
                                 : <img src={require('../../image/product/up-arrow.png')} alt="up-arrow"/>
                         }
                     </div>
-
                 </div>
                 <Collapse isOpen={this.state.collapseThree}>
                     <div className="left-nav-collapse-result">Itami:R-S</div>
                 </Collapse>
 
+
                 <div className="left-nav-collapse" onClick={ () => this.toggleFour() }>
                     <div>
-                        Price
+                        Brand
                     </div>
                     <div>
                         {
