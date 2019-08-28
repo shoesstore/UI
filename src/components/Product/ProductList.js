@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Product              from './Product';
+import propTypes            from 'prop-types';
 
 
 export default class ProductList extends Component {
@@ -10,7 +11,7 @@ export default class ProductList extends Component {
 
 
     addProduct() {
-        const product = [ ...this.state.cart ];
+        const product = [ ...this.props.product];
 
         const newProduct = product.push(product);
 
@@ -24,17 +25,7 @@ export default class ProductList extends Component {
 
     render() {
 
-        const products = [
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000 },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000 },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000 },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000 },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000 },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000 },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000 },
-            { img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000 },
-        ];
-
+        const { products } = this.props;
 
         return (
             <div>
@@ -49,7 +40,7 @@ export default class ProductList extends Component {
                                         height={400}
                                         width={300}
                                         className="product"
-                                        addProduct={ () => this.addProduct() }
+                                        addProduct={ (product) => this.addProduct(product) }
                                     />
                                 </div>
                             )
@@ -60,3 +51,20 @@ export default class ProductList extends Component {
         );
     }
 }
+
+ProductList.propTypes = {
+    products: propTypes.object
+};
+
+ProductList.defaultProps = {
+    products: [
+        { id: 1, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
+        { id: 2, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
+        { id: 3, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
+        { id: 4, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
+        { id: 5, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
+        { id: 6, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
+        { id: 7, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
+        { id: 8, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
+    ]
+};

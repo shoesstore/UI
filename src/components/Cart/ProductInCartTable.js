@@ -17,7 +17,7 @@ export default class ProductInCartTable extends Component {
                 <td><center><strong>{product.name}</strong></center></td>
                 <td><center><strong>{product.price}</strong></center></td>
                 <td><center><strong>{product.quantity}</strong></center></td>
-                <td><center><strong>{product.total}</strong></center></td>
+                <td><center><strong>{product.price * product.quantity} </strong></center></td>
                 <td>
                     <center>
                         <img src={require('../../image/button/delete-product.png')} alt="delete-product" />
