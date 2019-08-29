@@ -37,7 +37,7 @@ export default class Product extends Component {
                                 fontSize={10}
                                 borderRadius="25px"
                             >
-                                <Link to="/product">
+                                <Link to={`/product/${product.id}`}>
                                     Quick Review
                                 </Link>
                             </ButtonShoesStore>

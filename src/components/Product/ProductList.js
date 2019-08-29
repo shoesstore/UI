@@ -6,20 +6,28 @@ import propTypes            from 'prop-types';
 export default class ProductList extends Component {
 
     state = {
+        products: { id: 1, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
         cart: []
     };
 
+    componentWillUnmount() {
+        this.setState({
+            cart: [...this.props.products]
+        })
+    }
 
     addProduct() {
-        const product = [ ...this.props.product];
+        const cart = [ ...this.state.cart];
 
-        const newProduct = product.push(product);
+        console.log("cart", cart);
+
+        const newCart = cart.concat(this.state.products);
 
         this.setState({
-            cart: newProduct
+            cart: newCart
         });
 
-        console.log(newProduct);
+        console.log("newCart", newCart);
     };
 
 
@@ -31,11 +39,10 @@ export default class ProductList extends Component {
             <div>
                 <div className="row container-fluid">
                     {
-                        products.map((product, index) => {
+                        products.map((product) => {
                             return(
-                                <div>
+                                <div key={product.id}>
                                     <Product
-                                        key={index}
                                         product={product}
                                         height={400}
                                         width={300}
