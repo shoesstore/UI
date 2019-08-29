@@ -4,9 +4,16 @@ import App                from './App';
 import * as serviceWorker from './serviceWorker';
 import                         './index.css';
 import                          'bootstrap/dist/css/bootstrap.css';
+import store              from "./store";
+import {Provider} from "react-redux";
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+const rootElement = document.getElementById('root');
+ReactDOM.render(
+    <Provider store={store}>
+    <App/>
+    </Provider>,
+    rootElement
+)
 
 serviceWorker.unregister();
