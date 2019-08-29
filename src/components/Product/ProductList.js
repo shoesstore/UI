@@ -6,28 +6,20 @@ import propTypes            from 'prop-types';
 export default class ProductList extends Component {
 
     state = {
-        products: { id: 1, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
         cart: []
     };
 
-    componentWillUnmount() {
-        this.setState({
-            cart: [...this.props.products]
-        })
-    }
 
     addProduct() {
-        const cart = [ ...this.state.cart];
+        // const newCart = cart.concat(this.props.products);
 
-        console.log("cart", cart);
-
-        const newCart = cart.concat(this.state.products);
+        const newCart = this.props.products.find(product => product.id !== product);
 
         this.setState({
             cart: newCart
         });
 
-        console.log("newCart", newCart);
+        console.log("newCart", this.state.cart);
     };
 
 
@@ -60,7 +52,7 @@ export default class ProductList extends Component {
 }
 
 ProductList.propTypes = {
-    products: propTypes.object
+    products: propTypes.object,
 };
 
 ProductList.defaultProps = {
@@ -73,5 +65,5 @@ ProductList.defaultProps = {
         { id: 6, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
         { id: 7, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
         { id: 8, img: require('../../image/carousel/carousel1.jpg'), name:"Nike Joyride Run Flyknit", price: 1000, quantity: 1, total: 100 },
-    ]
+    ],
 };
