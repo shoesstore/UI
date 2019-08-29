@@ -1,5 +1,7 @@
 .cart-table {
-    padding: 100px 25px 100px 25px ;
+    padding: 100px 25px 100px 25px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .img-product {

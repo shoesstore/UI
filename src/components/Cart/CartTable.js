@@ -18,12 +18,12 @@ export default class CartTable extends Component {
                 <Table>
                     <thead>
                     <tr>
-                        <th><center><strong>...</strong></center></th>
-                        <th><center><strong>Product</strong></center></th>
-                        <th><center><strong>Price</strong></center></th>
-                        <th><center><strong>Quantity</strong></center></th>
-                        <th><center><strong>Total</strong></center></th>
-                        <th><center><strong>Cancel</strong></center></th>
+                        <th>...</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Cancel</th>
                     </tr>
                     </thead>
                     <tbody>

@@ -11,15 +11,11 @@ export default class ProductList extends Component {
 
 
     addProduct() {
-        // const newCart = cart.concat(this.props.products);
-
-        const newCart = this.props.products.find(product => product.id !== product);
-
+        const { products } = this.props;
+        const newCart = products.find(product => product.id !== product);
         this.setState({
             cart: newCart
         });
-
-        console.log("newCart", this.state.cart);
     };
 
 
