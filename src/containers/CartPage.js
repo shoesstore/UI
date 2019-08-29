@@ -8,7 +8,7 @@ import                              '../components/Cart/cart.css';
 export default class CartPage extends Component {
     render() {
         return (
-            <div>
+            <div className="container-fluid">
                 <BreadCrumbShoeStore page="Cart"/>
                 <MotionTextCartPage/>
                 <CartTable/>
