@@ -1,14 +1,11 @@
-import React, { Component }                                             from "react";
-import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink }          from "reactstrap";
-import {Link}                                                           from "react-router-dom";
-import { ButtonShoesStore }                                             from "../../ui";
-
-import FormRegister                                                     from "../../components/Form/FormRegister";
-import FormLogin                                                        from "../../components/Form/FormLogin";
-import ButtonDropdown                                                   from "reactstrap/es/ButtonDropdown";
-import DropdownToggle                                                   from "reactstrap/es/DropdownToggle";
-import ShoppingCart                                                     from "../../components/Cart/ShoppingCart";
-import                                                                       "./topbar.css";
+import React, { Component }                                                                     from "react";
+import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink, ButtonDropdown, DropdownToggle }  from "reactstrap";
+import { Link }                                                                                 from "react-router-dom";
+import { ButtonShoesStore }                                                                     from "../../ui";
+import FormRegister                                                                             from "../../components/Form/FormRegister";
+import FormLogin                                                                                from "../../components/Form/FormLogin";
+import ShoppingCart                                                                             from "../../components/Cart/ShoppingCart";
+import                                                                                               "./topbar.css";
 
 
 export default class Topbar extends Component {
