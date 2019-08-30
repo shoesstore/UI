@@ -1,12 +1,14 @@
-import React, { Component }                                             from 'react';
+import React, { Component }                                             from "react";
 import { Modal, ModalBody, ModalFooter, ModalHeader, NavLink }          from "reactstrap";
+import {Link}                                                           from "react-router-dom";
+import { ButtonShoesStore }                                             from "../../ui";
+
 import FormRegister                                                     from "../../components/Form/FormRegister";
 import FormLogin                                                        from "../../components/Form/FormLogin";
-import { ButtonShoesStore }                                             from '../../ui';
-import                                                                       './topbar.css';
-    import ButtonGroup                                                  from "reactstrap/es/ButtonGroup";
 import ButtonDropdown                                                   from "reactstrap/es/ButtonDropdown";
 import DropdownToggle                                                   from "reactstrap/es/DropdownToggle";
+import ShoppingCart                                                     from "../../components/Cart/ShoppingCart";
+import                                                                       "./topbar.css";
 
 
 export default class Topbar extends Component {
@@ -32,27 +34,42 @@ export default class Topbar extends Component {
 
     toggleThree() {
         this.setState({
-            dropdown: !this.state.dropdown
+            modalThree: !this.state.modalThree
         })
     };
 
     render() {
 
-        const { modalOne, modalTwo } = this.state;
+        const { modalOne, modalTwo, modalThree } = this.state;
 
         return (
             <div className="topbar-total">
                 <div className="topbar">
-                    <ButtonGroup>
-                        <ButtonDropdown isOpen={this.state.dropdown} toggle={ () => this.toggleThree() }>
-                            <DropdownToggle style={{ background: "#fcfcfc", height:50 }}>
+                    <div>
+                        <ButtonDropdown  isOpen={this.state.dropdown} toggle={ () => this.toggleThree() }>
+                            <DropdownToggle caret color="link" style={{ background: "#fcfcfc", height:50 }}>
                                 <img style={{ height: 30, width: 30, marginRight: 15, marginTop: 3 }}
                                      src={require('../../image/cart/icon-cart.jpg')}
                                      alt="icon-cart"
                                 />
                             </DropdownToggle>
                         </ButtonDropdown>
-                    </ButtonGroup>
+                    </div>
+
+                    <Modal isOpen={modalThree} toggle={ () => this.toggleThree() }>
+                        <ModalHeader toggle={ () => this.toggleThree()} > Shopping Cart </ModalHeader>
+                        <ModalBody>
+                            <ShoppingCart/>
+                        </ModalBody>
+                        <ModalFooter>
+                            <ButtonShoesStore
+                                color="danger"
+                                onClick={ () => this.toggleThree() }
+                            > <Link to="/">To Cart </Link>
+                            </ButtonShoesStore>
+                        </ModalFooter>
+                    </Modal>
+
                     <div>
                         <div>
                             <NavLink onClick={ () => this.toggleOne() }>Login</NavLink>
