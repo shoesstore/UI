@@ -46,9 +46,12 @@ class Collapses extends Component {
                 </div>
                 <Collapse isOpen={this.state.collapseOne}>
                     <div className="left-nav-collapse-result">
-                        <ButtonShoesStore color="danger"/>
-                        <ButtonShoesStore color="success"/>
-                        <ButtonShoesStore color="primary"/>
+                        <ButtonShoesStore color="primary" style={{ borderRadius: "25px", height: 22 }}/>
+                        <ButtonShoesStore color="secondary" style={{ borderRadius: "25px", height: 22 }}/>
+                        <ButtonShoesStore color="success" style={{ borderRadius: "25px", height: 22 }}/>
+                        <ButtonShoesStore color="info" style={{ borderRadius: "25px", height: 22 }}/>
+                        <ButtonShoesStore color="warning" style={{ borderRadius: "25px", height: 22 }}/>
+                        <ButtonShoesStore color="danger" style={{ borderRadius: "25px", height: 22 }}/>
                     </div>
                 </Collapse>
 
@@ -67,7 +70,11 @@ class Collapses extends Component {
 
                 </div>
                 <Collapse isOpen={this.state.collapseTwo}>
-                    <div className="left-nav-collapse-result">Itami:R-S</div>
+                    <div className="left-nav-collapse-result">
+                        <div>Mens Sizes</div>
+                        <div>Womens Sizes</div>
+                        <div>Youths Sizes</div>
+                    </div>
                 </Collapse>
 
                 <div className="left-nav-collapse" onClick={ () => this.toggleThree() }>
@@ -83,7 +90,15 @@ class Collapses extends Component {
                     </div>
                 </div>
                 <Collapse isOpen={this.state.collapseThree}>
-                    <div className="left-nav-collapse-result">Itami:R-S</div>
+                    <div className="left-nav-collapse-result">
+                        <div>Iron</div>
+                        <div>Bronze</div>
+                        <div>Silver</div>
+                        <div>Gold</div>
+                        <div>Platinum</div>
+                        <div>Diamond</div>
+                        <div>VIP</div>
+                    </div>
                 </Collapse>
 
 
@@ -100,7 +115,10 @@ class Collapses extends Component {
                     </div>
                 </div>
                 <Collapse isOpen={this.state.collapseFour}>
-                    <div className="left-nav-collapse-result">Itami:R-S</div>
+                    <div className="left-nav-collapse-result">
+                        <div>Nike</div>
+                        <div>Nike By You</div>
+                    </div>
                 </Collapse>
             </div>
         );
