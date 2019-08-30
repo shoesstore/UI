@@ -16,7 +16,7 @@ export default class ProductList extends Component {
         this.setState({
             cart: newCart
         });
-    };
+    };s
 
 
     render() {
