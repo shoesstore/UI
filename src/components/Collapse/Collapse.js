@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Collapse } from 'reactstrap';
-import "./collapse.css";
+import { Collapse }         from 'reactstrap';
+import { ButtonShoesStore } from "../../ui";
+import                           "./collapse.css";
+
 
 class Collapses extends Component {
 
@@ -44,7 +46,9 @@ class Collapses extends Component {
                 </div>
                 <Collapse isOpen={this.state.collapseOne}>
                     <div className="left-nav-collapse-result">
-                        Itami:R-S
+                        <ButtonShoesStore color="danger"/>
+                        <ButtonShoesStore color="success"/>
+                        <ButtonShoesStore color="primary"/>
                     </div>
                 </Collapse>
 
