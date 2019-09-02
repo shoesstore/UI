@@ -20,7 +20,7 @@ export default class ProductInCartTable extends Component {
                 <td><center><strong>{product.price * product.quantity} </strong></center></td>
                 <td>
                     <center>
-                        <img src={require('../../image/button/delete-product.png')} alt="delete-product" />
+                        <img src={require('../../image/button/garbage.png')} alt="delete-product" />
                     </center>
                 </td>
             </tr>

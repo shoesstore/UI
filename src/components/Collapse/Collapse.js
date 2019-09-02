@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { Collapse }         from 'reactstrap';
 import { ButtonShoesStore } from "../../ui";
-import                           "./collapse.css";
+
+import "./collapse.css";
 
 
-class Collapses extends Component {
+export default class Collapses extends Component {
 
     state = {
-        collapseOne : false,
-        collapseTwo : false,
+        collapseOne   : false,
+        collapseTwo   : false,
         collapseThree : false,
-        collapseFour : false,
+        collapseFour  : false,
     };
 
     toggleOne() {
@@ -124,5 +125,3 @@ class Collapses extends Component {
         );
     }
 }
-
-export default Collapses;

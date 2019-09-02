@@ -1,12 +1,13 @@
 import React,           { Component }               from 'react';
-import                  {BrowserRouter as Router}   from "react-router-dom";
+import                  { BrowserRouter as Router } from "react-router-dom";
 import RouterProtect                                from './routes';
 import Spinner                                      from "./components/Spinner/Spinner";
 import Topbar                                       from "./layouts/Topbar/Topbar";
 import Header                                       from "./layouts/Header/Header";
 import Footer                                       from "./layouts/Footer/Footer";
-import                                                   './App.css';
-import UpToTop from "./components/Button/ScrollUpButton";
+import UpToTop                                      from "./components/Button/ScrollUpButton";
+
+import './App.css';
 
 
 export default class App extends Component {
